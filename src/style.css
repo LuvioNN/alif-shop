@@ -1,0 +1,60 @@
+/* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	display: flex;
+	gap: 25px;
+	max-width: 800px;
+	margin: auto;
+	align-items: center;
+	padding: 24px;
+}
+
+.swiper-container {
+	width: 500px;
+}
+
+.main-swiper {
+	width: 100%;
+	height: 400px;
+}
+
+.main-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.thumbs-swiper {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.thumbs-swiper .swiper-slide {
+	width: 80px !important;
+	height: 80px !important;
+	border: 2px solid transparent;
+	transition: border 0.3s ease;
+}
+
+.thumb-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+.swiper-slide-thumb-active {
+	border-color: blue !important;
+} */
