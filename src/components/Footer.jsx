@@ -74,15 +74,10 @@ export default function Footer() {
 							<div className='footer__alishop'>
 								<h1 className='footer__alishop-marketplace'>alif shop</h1>
 								<p className='footer__alishop-allows'>
-									<a href='' className='focus__alishop-that'>
-										alifshop.uz
-									</a>
-									alifshop.uz - xaridorlarga tez va qulay tarzda turli xil
-									tovarlarni sotib olish imkoniyatini beradigan marketpleys.
-									alifshop.uz saytida smartfon, kompyuter, planshet, televizor,
-									aqlli soat va boshqa ko'plab moslamalarni topishingiz mumkin.
-									Bizning online do'konda elektronika, maishiy texnika,
-									avtomobil va maishiy buyumlarning katta tanlovi mavjud.
+									<p>
+										alifshop.uz - xaridorlarga tez va qulay tarzda turli xil
+										tovarlarni sotib olish imkoniyatini beradigan marketpleys.
+									</p>
 									<a href='' className='focus__alishop-purchase'>
 										alifshop.uz
 									</a>
@@ -121,7 +116,9 @@ export default function Footer() {
 									bajarishingiz
 								</p>
 								<div className='footer__alishop-immer'>
-									<h3 className='footer__alishop-wide'>Показать все</h3>
+									<h3 className='footer__alishop-wide'>
+										Barchasini ko'rsatish
+									</h3>
 								</div>
 							</div>
 							<div className='footer__addition-electronics'>
@@ -153,58 +150,60 @@ export default function Footer() {
 							<div className='all__footer-conditions'>
 								<div className='all__footer-good'>
 									<div className='all__footer-shift'>
-										<p className='allfooter-of'>Документы</p>
+										<p className='allfooter-of'>Hujjatlar</p>
 										<div className='all__ons'>
 											<a href='' className='all__className'>
-												Общие условия продажи
+												Sotish uchun umumiy shartlar
 											</a>
 											<a href='' className='all__className'>
-												Устав
+												Nizom
 											</a>
 											<a href='' className='all__className'>
-												Свидетельство
+												Guvohnoma
 											</a>
 										</div>
 									</div>
 									<div className='all__data'>
-										<p className='all__footer-service'>Сервис</p>
+										<p className='all__footer-service'>Servis</p>
 										<div className='all__class'>
 											<a href='' className='all__className'>
-												Время намаза
+												Namoz vaqti
 											</a>
 											<a href='' className='all__className'>
-												Рассрочка в Исламе
+												Muddatli Tolov islomda
 											</a>
 											<a href='' className='all__className'>
-												Продавайте на alif shop!
+												Alif-shopda soting!
 											</a>
 											<a href='' className='all__className'>
-												Возвраты
+												Qaytarish
 											</a>
 										</div>
 									</div>
 									<div className=''>
-										<p className='all__footer-smartphones'>Каталог товаров</p>
+										<p className='all__footer-smartphones'>Tovarlar katalogi</p>
 										<div className='all__name'>
 											<a href='' className='all__className'>
-												Смартфоны и телефоны
+												Smartfonlar va telefonlar
 											</a>
 											<a href='' className='all__className'>
-												Гаджеты
+												Gadjetlar
 											</a>
 											<a href='' className='all__className'>
-												Аксессуары для телефонов
+												Smartfonlar uchun aksessuarlar
 											</a>
 											<a href='' className='all__className'>
-												Часы и аксессуары
+												Soat va aksessuarlar
 											</a>
 											<a href='' className='all__className'>
-												Cопутствующие товары
+												Tegishli tovarlar
 											</a>
 										</div>
 									</div>
 									<div className=''>
-										<p className='all__footer-main'>Мы в соц-медиа</p>
+										<p className='all__footer-main'>
+											Biz ijtimoiy axborot vositalarida
+										</p>
 										<div className='all__olain'>
 											<img src={instagram} alt='' className='all__className' />
 											<img src={facebook} alt='' className='all__className' />
@@ -213,7 +212,7 @@ export default function Footer() {
 											<img src={tiktok} alt='' className='all__className' />
 										</div>
 										<div className='all__immer'>
-											<p className=''>Справочная служба</p>
+											<p className=''>Axborot xizmati</p>
 											<a href='' className=''>
 												@alifshop_uz
 											</a>

@@ -43,10 +43,10 @@ function Header() {
 						</Link>
 						<button className='header__signup'>Kirish</button>
 
-						<select className='header__language'>
+						{/* <select className='header__language'>
 							<option value='UZB'>UZB</option>
 							<option value='РУС'>РУС</option>
-						</select>
+						</select> */}
 					</div>
 					<div className='header__bottom'>
 						<div className='header__box'>
@@ -58,9 +58,6 @@ function Header() {
 							<p className='header__subtitle'>Uy uchun texnika</p>
 							<p className='header__subtitle'>Oshxona uchun texnika</p>
 							<p className='header__subtitle'>Go'zallik va sog'liq</p>
-						</div>
-						<div className='header__box1'>
-							<h1 className='header__title'>Yana</h1>
 						</div>
 					</div>
 				</div>

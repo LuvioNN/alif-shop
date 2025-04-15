@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import RightButton from '../assets/icons/chevron-right'
 import GlobalCart from '../assets/icons/Cart'
+import Toast from './Toast'
 import GlobalIcon from '../assets/icons/GlobalHeart'
 import { CartContext } from '../contexts/CartContext'
 import { useNavigate } from 'react-router-dom'
@@ -10,7 +11,18 @@ function Products() {
 	const [products, setProducts] = useState([])
 	const { addToCart } = useContext(CartContext)
 	const { addTofavorite } = useContext(FavoriteContext)
+	const [showToast, setShowToast] = useState(false)
+	const [showFavToast, setShowFavToast] = useState(false)
 
+	const handleAddToCart = item => {
+		addToCart(item)
+		setShowToast(true)
+	}
+
+	const handleAddToFavorite = item => {
+		addTofavorite(item)
+		setShowFavToast(true)
+	}
 	function getProducts() {
 		fetch('https://3f019a703d00d18f.mokky.dev/products')
 			.then(res => res.json())
@@ -55,17 +67,32 @@ function Products() {
 									<div className='cards__buttonss'>
 										<button
 											className='cards__buy'
-											onClick={() => addToCart(item)}
+											onClick={() => handleAddToCart(item)}
 										>
 											<GlobalCart />
 											Savatga
 										</button>
+
 										<span
-											onClick={() => addTofavorite(item)}
+											onClick={() => handleAddToFavorite(item)}
 											className='cards__icon'
 										>
 											<GlobalIcon />
 										</span>
+										{showToast && (
+											<Toast
+												message='Savatga qoshilgan'
+												onClose={() => setShowToast(false)}
+											/>
+										)}
+
+										{showFavToast && (
+											<Toast
+												message='Saralanganlarga qoshilgan'
+												onClose={() => setShowFavToast(false)}
+												type='favorite'
+											/>
+										)}
 									</div>
 								</div>
 							</div>

@@ -1,9 +1,17 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import DeleteIcon from '../assets/icons/DeleteIcon'
 import { FavoriteContext } from '../contexts/FavoriteContext'
+import Empty from '../components/Empty'
 
 function Favorite() {
-	const { favorite, deleteCartItem } = useContext(FavoriteContext)
+	const { favorite, deletefavoriteItem } = useContext(FavoriteContext)
+	useEffect(() => {
+		if (favorite.length === 0) {
+			setIsShow(true)
+		}
+	}, [favorite])
+
+	const [show, setIsShow] = useState(false)
 
 	return (
 		<section className='favorite'>
@@ -12,6 +20,8 @@ function Favorite() {
 					<div className='favorite__title'>
 						<h1>Saralanganlar</h1>
 					</div>
+					<div className='show'>{show && <Empty />}</div>
+
 					<div className='cart__wrap'>
 						{favorite.map(item => (
 							<div key={'id'} className='cart__item'>
@@ -25,6 +35,7 @@ function Favorite() {
 											Toshkent bo'ylab 1 kundan boshlab. O' zbekiston bo'ylab 3
 											kundan boshlab
 										</p>
+										{favorite.lenght}
 
 										<div className='cart__text__subtitl__one'>
 											{/* <div className='cart__text__subtitl__two'>
@@ -44,7 +55,7 @@ function Favorite() {
 												</button>
 											</div> */}
 											<button
-												onClick={() => deleteCartItem(item)}
+												onClick={() => deletefavoriteItem(item)}
 												className='cart__buttonn'
 											>
 												<DeleteIcon>Oʻchirish</DeleteIcon>
@@ -61,5 +72,4 @@ function Favorite() {
 		</section>
 	)
 }
-
 export default Favorite

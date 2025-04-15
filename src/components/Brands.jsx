@@ -56,7 +56,7 @@ function Brands() {
 									</span>
 								</div>
 								<div className='brands__'>
-									<p className=''>Перейти в каталог</p>
+									<p className=''>Katalogga o'tish</p>
 								</div>
 							</button>
 						</div>

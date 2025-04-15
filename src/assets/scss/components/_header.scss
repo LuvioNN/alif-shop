@@ -1,6 +1,7 @@
 .header {
 	padding: 20px 0;
 
+	font-family: sans-serif;
 	&__wrap {
 		display: flex;
 		align-items: center;
@@ -11,7 +12,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		gap: 20px;
+		gap: 40px;
 	}
 	&__left {
 		display: flex;
@@ -139,6 +140,12 @@
 		gap: 10px;
 		padding: 30px 0;
 		max-width: 1120px;
+		font-family: sans-serif;
+		p {
+			font-size: 14px;
+			color: #788998;
+			font-weight: 550;
+		}
 	}
 	&__subtitle {
 		font-size: 13px;
